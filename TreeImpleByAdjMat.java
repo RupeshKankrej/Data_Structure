@@ -1,10 +1,10 @@
-package com.datastructure;
+package com.datastructure.code.datastructure;
 
 public class TreeImpleByAdjMat {
 
-    private int V;
+    private final int V;
     private int E;
-    private int[][] adjMatrix;
+    private final int[][] adjMatrix;
 
     public TreeImpleByAdjMat(int nodes){
         this.V = nodes;
@@ -20,11 +20,11 @@ public class TreeImpleByAdjMat {
 
     public String toString(){
         StringBuilder sb = new StringBuilder();
-        sb.append(V+" vertices, "+E+" edges "+"\n");
+        sb.append(V).append(" vertices, ").append(E).append(" edges ").append("\n");
         for(int i = 0; i<V; i++){
-            sb.append(V +": ");
+            sb.append(V).append(": ");
             for(int e : adjMatrix[i]){
-                sb.append(e+" ");
+                sb.append(e).append(" ");
             }
             sb.append("\n");
         }

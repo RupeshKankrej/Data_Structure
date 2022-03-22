@@ -1,4 +1,4 @@
-package com.datastructure;
+package com.datastructure.code.datastructure;
 
 import java.util.Stack;
 
@@ -6,7 +6,7 @@ public class InOrderTraversal {
 
     private TreeNode root;
 
-    private class TreeNode{
+    private static class TreeNode{
         private int data;
         private TreeNode right;
         private TreeNode left;

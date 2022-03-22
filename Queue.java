@@ -1,4 +1,4 @@
-package com.datastructure;
+package com.datastructure.code.datastructure;
 
 import com.sun.jdi.connect.spi.TransportService;
 

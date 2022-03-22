@@ -1,4 +1,4 @@
-package com.datastructure;
+package com.datastructure.code.datastructure;
 
 import java.util.*;
 

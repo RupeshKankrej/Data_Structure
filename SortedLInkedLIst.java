@@ -1,11 +1,11 @@
-package com.datastructure;
+package com.datastructure.code.datastructure;
 
 public class SortedLInkedLIst {
     private LinkNode head= null;
-    private LinkNode tail = null;
+    private final LinkNode tail = null;
 
     private static class LinkNode{
-        private int data;
+        private final int data;
         private LinkNode next;
 
         public LinkNode(int data){
@@ -39,10 +39,10 @@ public class SortedLInkedLIst {
         }
     }
 
-    public LinkNode addNodeSLL(int data){
+    public void addNodeSLL(int data){
         LinkNode newNode = new LinkNode(data);
         if(head == null){
-            return newNode;
+            return;
         }
         LinkNode current = head;
         LinkNode temp = head;
@@ -52,7 +52,6 @@ public class SortedLInkedLIst {
         }
         newNode.next = current;
         temp.next = newNode;
-        return head;
     }
 
     public void removeDuplicate(){

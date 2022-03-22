@@ -1,4 +1,4 @@
-package com.datastructure;
+package com.datastructure.code.datastructure;
 
 public class Array {
 //    Printing the array;

@@ -1,10 +1,10 @@
-package com.datastructure;
+package com.datastructure.code.datastructure;
 
 public class MaxTreeNode {
     private TreeNode root;
 
-    private class TreeNode{
-        private int data;
+    private static class TreeNode{
+        private final int data;
         private TreeNode right;
         private TreeNode left;
 
@@ -40,10 +40,7 @@ public class MaxTreeNode {
         if(left>result){
             return left;
         }
-        if(right>result){
-            return right;
-        }
-        return result;
+        return Math.max(right, result);
     }
 
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.datastructure;
+package com.datastructure.code.datastructure;
 
 public class BubbleSort {
 
@@ -15,7 +15,7 @@ public class BubbleSort {
                     isSwap = true;
                 }
             }
-            if(isSwap==false) break;
+            if(!isSwap) break;
         }
     }
 

@@ -1,10 +1,10 @@
-package com.datastructure;
+package com.datastructure.code.datastructure;
 
 public class SearchInBST {
     private TreeNode root;
 
-    private class TreeNode{
-        private int data;
+    private static class TreeNode{
+        private final int data;
         private TreeNode right;
         private TreeNode left;
 

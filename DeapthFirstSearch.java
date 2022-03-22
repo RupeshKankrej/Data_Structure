@@ -1,13 +1,13 @@
-package com.datastructure;
+package com.datastructure.code.datastructure;
 
 import java.util.LinkedList;
 import java.util.Stack;
 
 public class DeapthFirstSearch {
 
-    private int V;
+    private final int V;
     private int E;
-    private LinkedList<Integer>[] adj;
+    private final LinkedList<Integer>[] adj;
 
     public DeapthFirstSearch(int nodes){
         this.V = nodes;
@@ -26,11 +26,11 @@ public class DeapthFirstSearch {
 
     public String toString(){
         StringBuilder sb = new StringBuilder();
-        sb.append(V+" vertices, "+E+" edges.\n");
+        sb.append(V).append(" vertices, ").append(E).append(" edges.\n");
         for(int v = 0; v<V; v++){
-            sb.append(v+": ");
+            sb.append(v).append(": ");
             for(int w : adj[v]){
-                sb.append(w+" ");
+                sb.append(w).append(" ");
             }
             sb.append("\n");
         }

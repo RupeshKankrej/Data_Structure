@@ -1,12 +1,12 @@
-package com.datastructure;
+package com.datastructure.code.datastructure;
 
 import java.util.LinkedList;
 
 public class TreeImpleByAdjList {
 
-    private int V;
+    private final int V;
     private int E;
-    private LinkedList<Integer>[] adj;
+    private final LinkedList[] adj;
 
     public TreeImpleByAdjList(int nodes){
         this.V = nodes;
@@ -25,11 +25,11 @@ public class TreeImpleByAdjList {
 
     public String toString(){
         StringBuilder sb = new StringBuilder();
-        sb.append(V+" vertices, "+E+" edges "+"\n");
+        sb.append(V).append(" vertices, ").append(E).append(" edges ").append("\n");
         for(int i = 0; i<V; i++){
-            sb.append(i+": ");
-            for(int w: adj[i]){
-                sb.append(w+" ");
+            sb.append(i).append(": ");
+            for(Object w: adj[i]){
+                sb.append(w).append(" ");
             }
             sb.append("\n");
         }

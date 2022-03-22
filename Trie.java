@@ -1,17 +1,17 @@
-package com.datastructure;
+package com.datastructure.code.datastructure;
 
 import java.util.Locale;
 
 public class Trie {
 
-    private TrieNode root;
+    private final TrieNode root;
 
     public Trie(){
         this.root = new TrieNode();
     }
 
-    private class TrieNode{
-        private TrieNode[] children;
+    private static class TrieNode{
+        private final TrieNode[] children;
         private boolean isWord;
 
         public TrieNode(){

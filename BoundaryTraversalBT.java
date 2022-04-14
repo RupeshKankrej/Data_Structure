@@ -42,7 +42,7 @@ public class BoundaryTraversalBT {
         third.right = seventh;
     }
 
-    public ArrayList<Integer> verticalOrderTraversal(TreeNode root) {
+    public ArrayList<Integer> boundaryTraversal(TreeNode root) {
         ArrayList<Integer> res = new ArrayList<>();
 
         if (!isLeaf(root))
@@ -99,7 +99,7 @@ public class BoundaryTraversalBT {
     public static void main(String[] args) {
         BoundaryTraversalBT bt = new BoundaryTraversalBT();
         bt.createTree();
-        ArrayList<Integer> res = bt.verticalOrderTraversal(bt.root);
+        ArrayList<Integer> res = bt.boundaryTraversal(bt.root);
         for (int e : res) {
             System.out.print(e + " ");
         }

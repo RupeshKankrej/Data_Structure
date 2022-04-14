@@ -11,10 +11,11 @@ public class IpComparison {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        while(sc.hasNext()){
+        while (sc.hasNext()) {
             String ip = sc.next();
             System.out.println(ip.matches(new MyRegex().pattern));
         }
+        sc.close();
     }
 
 }
